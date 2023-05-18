@@ -1,4 +1,4 @@
-pipelineJob('crudspringboot-jenkinsfile-new') {
+pipelineJob('crudspringboot-jenkinsfile') {
     definition {
         cpsScm {
             scm {
