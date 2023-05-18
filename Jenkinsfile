@@ -7,7 +7,7 @@ pipelineJob('crudspringboot-jenkinsfile-new') {
                         url('https://github.com/BrayanDanielTiqueHernandez23/devops.git')
                         credentials('tokengithub')
                     }
-                    branch('*/feature')
+                    branch('*/master')
                 }
                 scriptPath('Jenkinsfile')
             }
