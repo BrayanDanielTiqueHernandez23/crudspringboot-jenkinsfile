@@ -24,3 +24,6 @@ EXPOSE 3000
 
 # Comando de entrada para ejecutar la aplicación
 CMD ["java", "-jar", "app.jar"]
+
+# Agrega el contenedor crudspringboot-container y configura el puerto de exposición:
+# docker run -d -p 3000:8080 --name crudspringboot-container crudspringboot-buildimagen
