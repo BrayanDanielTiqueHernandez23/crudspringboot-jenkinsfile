@@ -2,7 +2,7 @@
 FROM maven:3.8.4-openjdk-11 AS builder
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR /crudspringboot
+WORKDIR /crudspringboot1
 
 # Cambia al usuario root
 USER root
@@ -17,7 +17,7 @@ RUN mvn clean package
 FROM openjdk:11-jdk
 
 # Establece el directorio de trabajo dentro del contenedor
-WORKDIR /crudspringboot
+WORKDIR /crudspringboot1
 
 # Copia el archivo JAR generado por la compilación al directorio de trabajo en el contenedor
 COPY --from=builder /crudspringboot/target/*.jar app.jar
