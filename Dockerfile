@@ -4,6 +4,9 @@ FROM maven:3.8.4-openjdk-11 AS builder
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /crudspringboot
 
+# Cambia al usuario root
+USER root
+
 # Copia los archivos del repositorio al directorio de trabajo en el contenedor
 COPY . .
 
