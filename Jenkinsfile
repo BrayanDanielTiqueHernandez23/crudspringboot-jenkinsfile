@@ -1,3 +1,3 @@
 @Library('devops@master') _
 
-pipelineGeneral('https://github.com/BrayanDanielTiqueHernandez23/crudspringboot-jenkinsfile.git', 'feature', 'tokengithub')
+pipelineGeneral(scmUrl: 'https://github.com/BrayanDanielTiqueHernandez23/crudspringboot-jenkinsfile.git')
