@@ -1,3 +1,3 @@
-@Library('devops@master') _
+@Library('sharedlibrary') _
 
-pipelineGeneral(scmUrl: 'https://github.com/BrayanDanielTiqueHernandez23/crudspringboot-jenkinsfile.git')
+deployMain('https://github.com/BrayanDanielTiqueHernandez23/JavaAppWithJenkins.git','43252151')
